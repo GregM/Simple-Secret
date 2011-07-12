@@ -1,0 +1,43 @@
+<% if @content.nil? %>Sorry, the message expired!<% else %>
+
+		<!-- countdown js -->		
+		<script type="text/javascript" src="/javascripts/jquery.countdown.min.js"></script>
+
+		<!-- configure look of counter -->
+		<script type="text/javascript">
+		$(function () {
+			$('#defaultCountdown').countdown({
+				until: +<%= @content.expiration.to_i - Time.now.to_i %>,
+				format: 'YDHMS',
+				layout: '<div id="t7_timer">'+
+							'<div id="t7_vals">'+
+								'<div id="t7_y" class="t7_numbs">{ynn}</div>'+
+								'<div id="t7_d" class="t7_numbs">{dnn}</div>'+
+								'<div id="t7_h" class="t7_numbs">{hnn}</div>'+
+								'<div id="t7_m" class="t7_numbs">{mnn}</div>'+
+								'<div id="t7_s" class="t7_numbs">{snn}</div>'+
+							'</div>'+
+							'<div id="t7_labels">'+
+								'<div id="t7_yl" class="t7_labs">years</div>'+
+								'<div id="t7_dl" class="t7_labs">days</div>'+
+								'<div id="t7_hl" class="t7_labs">hours</div>'+
+								'<div id="t7_ml" class="t7_labs">mins</div>'+
+								'<div id="t7_sl" class="t7_labs">secs</div>'+
+							'</div>'+
+							'<div id="t7_timer_over"></div>'+
+						'</div>'
+				});
+		});
+		</script>
+
+  <div class="ui-widget">
+	  <div class="ui-state-highlight ui-corner-all" style="padding: 50px;"> 
+		  <%= @content.content %>
+	  </div>
+  </div>
+
+  <div class="ui-widget-content ui-corner-all" id="msg_content_disappearing">
+    <div class="content-clock-message">This message will disappear in:</div>
+    <div id="defaultCountdown"></div>
+  </div>
+<% end %>

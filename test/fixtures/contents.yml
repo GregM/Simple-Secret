@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  content: This is a test content.
+  expiration: 2011-04-07 09:47:11
+  code: fde810
+  views: 1
+
+two:
+  content: content two test.
+  expiration: 2011-04-07 09:47:11
+  code: c41345
+  views: 1
+
+three:
+  content: anothre little testing fixture.
+  expiration: 2011-08-07 09:47:11
+  code: 0259b5
+  views: 1

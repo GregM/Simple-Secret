@@ -1,0 +1,239 @@
+
+/**
+
+
+	By Ten Seven Interactive
+	http://ten7i.com/
+	
+	May 10, 2009 - after years of practice
+
+	If you use this & don't acknowledge it,
+	we will cry a global tear. Be fair!
+
+
+**/
+
+@font-face {
+    font-family: 'LaneNarrowRegular';
+    src: url('/stylesheets/fonts/LANENAR_-webfont.eot');
+    src: url('/stylesheets/fonts/LANENAR_-webfont.eot?iefix') format('eot'),
+         url('/stylesheets/fonts/LANENAR_-webfont.woff') format('woff'),
+         url('/stylesheets/fonts/LANENAR_-webfont.ttf') format('truetype'),
+         url('/stylesheets/fonts/LANENAR_-webfont.svg#webfontMAZXZguX') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/** the whole page **/
+html, body {
+	margin : 0px;
+  width:960px;
+	padding : 20px;
+	text-align : center;
+  margin:0 auto;
+  font-family: 'LaneNarrowRegular';
+}
+
+div#wrapper {
+  text-align:left;
+}
+
+div#wrapper #header {
+  font-family: 'LaneNarrowRegular'; font-size:50px; text-align:center; padding-bottom:50px;
+}
+
+div#wrapper #msg_content {
+  padding:50px; margin-top:15px;
+}
+
+div#msg_content_disappearing {
+  padding:15px; width:300px; margin-top:50px; text-align:center;
+}
+
+div#content-clock-message {
+  padding:10px;
+}
+
+div#wrapper #footer {
+  text-align:center; padding-top:15px;
+}
+
+/* copy styles */	
+h1, h2, h3, h4, p, li {
+	text-align : left;
+}
+pre {
+	text-align: left;
+	font-size: 12px;
+	font-weight: bold;
+}
+h1, h2 {
+	font-size: 16px;
+	font-weight: bold;
+}
+p, li {
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0px 0px 10px 0px;
+}
+td, th {
+	font-size: 14px;
+	margin: 0px;
+}
+
+/** hyper links **/
+a:link {
+	color: #0074ae;
+	text-decoration : underline;
+	font-weight : normal;
+}
+a:visited {
+	color: #006294;
+	text-decoration : underline;
+	font-weight : normal;
+}
+a:hover  {
+	color: #000000;
+	text-decoration : underline;
+	font-weight : normal;
+}
+
+			
+#t7_timer { 
+	width: 300px; 
+	height: 55px; 
+	position: relative;
+}
+
+#t7_timer_over { 
+	width: 300px; 
+	height: 55px; 
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	left: 1px;
+	margin: 0px;
+	padding: : 0px;
+}
+
+
+#t7_vals {
+	width: 100%;
+	clear:both;
+	margin: 0px auto;
+}
+
+.t7_numbs {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: left;
+}
+
+#t7_y {
+	background-image: url(/images/Countdown2.png);
+	background-repeat: no-repeat;
+	float:left;
+	width: 48px;
+	height:35px;
+	padding: 0px 0px 0px 3px;
+	margin: 1px;
+	letter-spacing: 7px;
+  color:white;
+}
+#t7_d {
+	background-image: url(/images/Countdown3.png);
+	background-repeat: no-repeat;
+	float:left;
+	width: 71px;
+	height:35px;
+	padding: 0px 0px 0px 3px;
+	margin: 1px;
+	letter-spacing: 7px;
+  color:white;
+}
+#t7_h {
+	background-image: url(/images/Countdown2.png);
+	background-repeat: no-repeat;
+	float:left;
+	width: 48px;
+	height:35px;
+	padding: 0px 0px 0px 3px;
+	margin: 1px;
+	letter-spacing: 7px;
+  color:white;
+}
+#t7_m {
+	background-image: url(/images/Countdown2.png);
+	background-repeat: no-repeat;
+	float:left;
+	width: 47px;
+	height:35px;
+	padding: 0px 0px 0px 3px;
+	margin: 1px;
+	letter-spacing: 7px;
+  color:white;
+}
+#t7_s {
+	background-image: url(/images/Countdown2-nc.png);
+	background-repeat: no-repeat;
+	float:left;
+	width: 42px;
+	height:35px;
+	padding: 0px 0px 0px 3px;
+	margin: 1px;
+	letter-spacing: 7px;
+  color:white;
+}
+
+#t7_labels {
+	width: 100%;
+	clear:both;
+	margin: 0px auto;
+}
+
+.t7_labs {
+	font-size: 9px;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	color: #000000;
+}
+#t7_yl {
+	float:left;
+	width: 51px;
+	height:15px;
+	padding:0px;
+	margin: 0px;
+}
+#t7_dl {
+	float:left;
+	width: 74px;
+	height:15px;
+	padding:0px;
+	margin: 0px;
+}
+#t7_hl {
+	float:left;
+	width: 54px;
+	height:15px;
+	padding:0px;
+	margin: 0px;
+}
+#t7_ml {
+	float:left;
+	width: 55px;
+	height:15px;
+	padding:0px;
+	margin: 0px;
+}
+#t7_sl {
+	float:left;
+	width: 46px;
+	height:15px;
+	padding:0px;
+	margin: 0px;
+}
+
+
+#defaultCountdown { width: 300px; height: 55px; text-align: center;}

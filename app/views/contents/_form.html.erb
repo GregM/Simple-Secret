@@ -1,0 +1,29 @@
+<%= form_for(@content) do |f| %>
+  <% if @content.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@content.errors.count, "error") %> prohibited this content from being saved:</h2>
+
+      <ul>
+      <% @content.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    What would you like to say?<br /><br />
+    <%= f.text_area :content, "cols" => "100", "rows" => "10" %>
+  </div>
+  <div class="field" style="margin-top:20px;">
+    When should this message expire?<br /><br />
+    <%= f.datetime_select :expiration %>
+  </div>
+  <div class="field" style="margin-top:20px;">
+    Who would you like to send it to?<br /><br />
+    <%= text_field :this, :user %>
+  </div>
+  <div class="actions" style="margin-top:20px;">
+    <%= f.submit "Send" %>
+  </div>
+<% end %>
